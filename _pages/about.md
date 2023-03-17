@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: ""
-excerpt: ""
+title: "about me"
+excerpt: "about me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -17,12 +17,16 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-My research interest includes computer vision and computer graphics. I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>).
+# 🔥 Bio
+
+Hey, thanks for stopping by! 😄
+I am a Project Officer at the Nanyang Technological University, working with Prof. [Ying He](https://personal.ntu.edu.sg/yhe/). Before that, I obtained my Bachelor’s Degree in Computer Science at Huazhong University of Science and Technology in 2022. Besides that, I've spent time at Sensetime Research, Shanghai AI Lab as an research intern. During internships, I was fortunate to work with Dr.[Kwan-yee Lin](https://kwanyeelin.github.io/).
+My research interests lie at the intersection of Computer Vision and Computer Graphics, with focus on Neural Rendering, Multi-view Reconstruction, Neurlal Implicit Representations.
+<!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
 
 
 # 🔥 News
-<!-- - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
+<!-- - *2023.03*: &nbsp;🎉🎉  -->
 
 # 📝 Publications 
 
@@ -40,18 +44,17 @@ My research interest includes computer vision and computer graphics. I have publ
 
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
-<!-- # 🎖 Honors and Awards
-- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
-
 # 📖 Educations
-- *2018.09 - 2022.04 (now)*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
-- *2018.09 - 2022.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2018.09 - 2022.06*, B.S. in Computer Science, Huazhong Univeristy of Science and Technology, Wuhan, China.
 
 <!-- # 💬 Invited Talks
 - *2021.06*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 # 💻 Internships
-- *2022.09 - 2023.03*, [Lorem](https://github.com/), China.
-- *2022.07 - 2022.09*, [Lorem](https://github.com/), China.
+- *2022.09 - 2023.03*, Shanghai AI Lab, China.
+- *2022.07 - 2022.09*, Sensetime Research, China.
+
+<!-- # 🎖 Honors and Awards
+- *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+- *2021.09* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
