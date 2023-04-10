@@ -21,7 +21,7 @@ redirect_from:
 
 Hey, thanks for stopping by! 😄
 
-I am a Project Officer in School of Computer Science and Engineering at the Nanyang Technological University, working with Prof. [Ying He](https://personal.ntu.edu.sg/yhe/). Before that, I obtained my Bachelor’s Degree in Computer Science at Huazhong University of Science and Technology in 2022. Besides that, I've spent time at Sensetime Research, Shanghai AI Lab as a research intern. During internships, I was fortunate to work with Dr. [Kwan-yee Lin](https://kwanyeelin.github.io/).
+I am a Research Assistant in School of Computer Science and Engineering at the Nanyang Technological University, working with Prof. [Ying He](https://personal.ntu.edu.sg/yhe/). Before that, I obtained my Bachelor’s Degree in Computer Science at Huazhong University of Science and Technology in 2022. Besides that, I've spent time at Sensetime Research, Shanghai AI Lab as a research intern. During internships, I was fortunate to work with Dr. [Kwan-yee Lin](https://kwanyeelin.github.io/).
 
 My research interests lie at the intersection of Computer Vision and Computer Graphics, with focus on Neural Rendering, Multi-view Reconstruction, Neural Implicit Representations.
 <!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
@@ -54,7 +54,7 @@ My research interests lie at the intersection of Computer Vision and Computer Gr
 - *2021.03*, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  \| [\[video\]](https://github.com/) -->
 
 #  Internships
-- *2022.09 - 2023.03*, Shanghai AI Lab, China.
+- *2022.09 - now*, Shanghai AI Lab, China.
 - *2022.07 - 2022.09*, Sensetime Research, China.
 
 #  Honors and Awards
