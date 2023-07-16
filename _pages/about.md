@@ -59,7 +59,7 @@ My research interests lie at the intersection of Computer Vision and Computer Gr
 - *2022.07 - 2022.09*, Sensetime Research, China.
 
 # Professional Service
-- reviewer: PG2023
+- Reviewer: PG2023
 
 #  Honors and Awards
 - *2022.06* Outstanding graduates of HUST.
