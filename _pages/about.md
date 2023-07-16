@@ -39,7 +39,8 @@ My research interests lie at the intersection of Computer Vision and Computer Gr
 ](https://arxiv.org/abs/2303.13855)
 
 **Baixin Xu**, Jiarui Zhang, Kwan-Yee Lin, Chen Qian, Ying He
-
+</div>
+</div>
 <!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
 - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
 </div>
@@ -48,6 +49,7 @@ My research interests lie at the intersection of Computer Vision and Computer Gr
 <!-- - [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020** -->
 
 #  Educations
+- *2023.08 - now*, Ph.D. student in School of Computer Science and Engineering, Nanyang Technological University, Singapore.
 - *2018.09 - 2022.06*, B.S. in Computer Science, Huazhong Univeristy of Science and Technology, Wuhan, China.
 
 <!-- #  Invited Talks
