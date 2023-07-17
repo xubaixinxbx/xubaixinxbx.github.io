@@ -39,7 +39,7 @@ Deformable Model Driven Neural Rendering for High-fidelity 3D Reconstruction of 
 
 **Baixin Xu**, Jiarui Zhang, Kwan-Yee Lin, Chen Qian, Ying He
 
-[Paper](https://arxiv.org/abs/2303.13855)[Code(coming soon)](https://github.com/xubaixinxbx/High-fidelity-3D-Reconstruction-of-Human-Heads)
+[Paper](https://arxiv.org/abs/2303.13855) | [Code(coming soon)](https://github.com/xubaixinxbx/High-fidelity-3D-Reconstruction-of-Human-Heads)
 </div>
 </div>
 <!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
