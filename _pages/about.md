@@ -21,7 +21,7 @@ redirect_from:
 
 Hey, thanks for stopping by! 😄
 
-I am a PhD student in School of Computer Science and Engineering at the Nanyang Technological University, working with Prof. [Ying He](https://personal.ntu.edu.sg/yhe/). Before that, I obtained my Bachelor’s Degree in Computer Science at Huazhong University of Science and Technology in 2022. Besides that, I've spent time at Sensetime Research, Shanghai AI Lab as a research intern. During internships, I was fortunate to work with Dr. [Kwan-yee Lin](https://kwanyeelin.github.io/).
+I am a PhD student in School of Computer Science and Engineering at the Nanyang Technological University, supervised by Prof. [Ying He](https://personal.ntu.edu.sg/yhe/). Before that, I obtained my Bachelor’s Degree in Computer Science at Huazhong University of Science and Technology in 2022. Besides that, I've spent time at Sensetime Research and Shanghai AI Lab as a research intern. During internships, I was fortunate to work with Dr. [Kwan-yee Lin](https://kwanyeelin.github.io/).
 
 My research interests lie at the intersection of Computer Vision and Computer Graphics, with focus on Neural Rendering, Multi-view Reconstruction, and Neural Implicit Representations.
 <!-- I have published more than 100 papers at the top international AI conferences with total <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'>google scholar citations <strong><span id='total_cit'>260000+</span></strong></a> (You can also use google scholar badge <a href='https://scholar.google.com/citations?user=DhtAFkwAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>). -->
@@ -35,10 +35,11 @@ My research interests lie at the intersection of Computer Vision and Computer Gr
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICCV 2023</div><img src='images/iccv23.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[Deformable Model Driven Neural Rendering for High-fidelity 3D Reconstruction of Human Heads Under Low-View Settings
-](https://arxiv.org/abs/2303.13855)
+Deformable Model Driven Neural Rendering for High-fidelity 3D Reconstruction of Human Heads Under Low-View Settings
 
 **Baixin Xu**, Jiarui Zhang, Kwan-Yee Lin, Chen Qian, Ying He
+
+[Paper](https://arxiv.org/abs/2303.13855)[Code(coming soon)](https://github.com/xubaixinxbx/High-fidelity-3D-Reconstruction-of-Human-Heads)
 </div>
 </div>
 <!-- [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
