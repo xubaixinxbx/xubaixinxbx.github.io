@@ -61,7 +61,11 @@ Deformable Model Driven Neural Rendering for High-fidelity 3D Reconstruction of 
 - *2022.07 - 2022.09*, Sensetime Research, China.
 
 # Professional Service
-- Reviewer: CVPR/PG/CVM
+**Conference Reviewer**
+- CVPR 2024, ECCV 2024, ACM MM 2024, PG 2023,
+
+**Journal Reviewer**
+- CVM-J
 
 #  Honors and Awards
 - *2022.06* Outstanding graduates of HUST.
