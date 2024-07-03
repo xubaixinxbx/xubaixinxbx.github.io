@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>mip-NeRF</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+        <!--FACEBOOK-->
+    <meta property="og:image" content="https://xubaixinxbx.github.io/neuparam/img/rays_square.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="682">
+    <meta property="og:image:height" content="682">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://xubaixinxbx.github.io/neuparam/"/>
+    <meta property="og:title" content="neuparam" />
+    <meta property="og:description" content="Project page for Parameterization-driven Neural Surface Reconstruction for Object-oriented Editing in Neural Rendering." />
+
+        <!--TWITTER-->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="neuparam" />
+    <meta name="twitter:description" content="Project page for Parameterization-driven Neural Surface Reconstruction for Object-oriented Editing in Neural Rendering." />
+    <meta name="twitter:image" content="https://xubaixinxbx.github.io/neuparam/img/rays_square.png" />
+
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                Parameterization-driven Neural Surface Reconstruction for Object-oriented Editing in Neural Rendering</br> 
+                <small>
+                    ECCV 2024
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://xubaixinxbx.github.io/">
+                          Baixin Xu
+                        </a>
+                        </br>NTU
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com.hk/citations?user=6TG39EcAAAAJ&hl">
+                            Jiangbei Hu
+                        </a>
+                        </br>DLUT & NTU
+                    </li>
+                    <li>
+                        <a href="https://lcs.ios.ac.cn/~houf/">
+                          Fei Hou
+                        </a>
+                        </br>CAS
+                    </li><br>
+                    <li>
+                        <a href="https://kwanyeelin.github.io/">
+                          Kwan-yee Lin
+                        </a>
+                        </br>Shanghai AI Laboratory
+                    </li>
+                    <li>
+                        <a href="https://wywu.github.io/">
+                          Wayne Wu
+                        </a>
+                        </br>Shanghai AI Laboratory
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com/citations?user=AerkT0YAAAAJ&hl">
+                          Chen Qian
+                        </a>
+                        </br>SenseTime
+                    </li>
+                    <li>
+                        <a href="https://personal.ntu.edu.sg/yhe/">
+                          Ying He
+                        </a>
+                        </br>NTU
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <!-- <li> -->
+                            <a href="https://arxiv.org/abs/2310.05524">
+                            <!-- <image src="img/mip_paper_image.jpg" height="60px"> -->
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        <!-- </li> -->
+                        <!-- <li>
+                            <a href="https://youtu.be/EpH175PY1A0">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li> -->
+                        <!-- <li> -->
+                            <a href="https://github.com/xubaixinxbx/NeuParam">
+                            <!-- <image src="img/github.png" height="60px"> -->
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        <!-- </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <image src="img/rays.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    The growing capabilities of neural rendering have increased the demand for new techniques that enable intuitive editing of 3D objects, particularly when they are represented as neural implicit surfaces. In this paper, we present a novel neural algorithm for parameterizing neural implicit surfaces to simple parametric domains, such as spheres and polycubes, thereby facilitating visualization and various editing tasks. Specifically, for polycubes, our method allows the user to specify the desired number of cubes for the domain and then learns a cube configuration that closely resembles the geometry of the target 3D object. It then computes a bi-directional deformation between the object and the domain, utilizing a forward mapping from points on the object's zero level set to the parametric domain, followed by an inverse deformation for backward mapping. To ensure the map is nearly bijective, we employ a cycle loss while optimizing the smoothness of both deformations. The quality of the computed parameterization, as assessed by angle and area distortions, is guaranteed through the use of a Laplacian regularizer and an optimized learned parametric domain. Designed for compatibility, our framework integrates seamlessly with existing neural rendering pipelines, taking multi-view images of a single object or multiple objects of similar geometries as input to reconstruct 3D geometry and compute the corresponding texture map. Our method is fully automatic and end-to-end, eliminating the need for any prior information.  We also introduce a simple yet effective technique for intrinsic radiance decomposition, facilitating both view-independent material editing and view-dependent shading editing. Our method allows for the immediate rendering of edited textures through volume rendering, without the need for network re-training. We demonstrate the effectiveness of our method on images of human heads and man-made objects. We will make the source code publicly available. 
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Supplementary  Video
+                </h3>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="img/ship_sbs_path1.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Method
+                </h3>
+                <p style="text-align:center;">
+                    <image src="img/pipeline.png" height="50px" class="img-responsive">
+                </p>
+                <h4>
+                    Parametric Domain Learning
+                </h4>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                    <source src="img/ship_sbs_path1.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+            
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Mip-NeRF
+                </h3>
+                <p class="text-justify">
+                    We use integrated positional encoding to train NeRF to generate anti-aliased renderings. Rather than casting an infinitesimal ray through each pixel, we instead cast a full 3D <em>cone</em>. For each queried point along a ray, we consider its associated 3D conical frustum. Two different cameras viewing the same point in space may result in vastly different conical frustums, as illustrated here in 2D:
+                </p>
+                <p style="text-align:center;">
+                    <image src="img/scales_toy.png" class="img-responsive" alt="scales">
+                </p>
+                <p class="text-justify">
+                    In order to pass this information through the NeRF network, we fit a multivariate Gaussian to the conical frustum and use the integrated positional encoding described above to create the input feature vector to the network. 
+                </p>
+            </div>
+        </div>
+            
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Results
+                </h3>
+                <p class="text-justify">
+                    We train NeRF and mip-NeRF on a dataset with images at four different resolutions. Normal NeRF (left) is not capable of learning to represent the same scene at multiple levels of detail, with blurring in close-up shots and aliasing in low resolution views, while mip-NeRF (right) both preserves sharp details in close-ups and correctly renders the zoomed-out images.
+                </p>                
+                <br>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/ship_sbs_path1.mp4" type="video/mp4" />
+                </video>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/chair_sbs_path1.mp4" type="video/mp4" />
+                </video>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/lego_sbs_path1.mp4" type="video/mp4" />
+                </video>
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/mic_sbs_path1.mp4" type="video/mp4" />
+                </video>
+                <br><br>
+                <p class="text-justify">
+                    We can also manipulate the integrated positional encoding by using a larger or smaller radius than the true pixel footprint, exposing the continuous level of detail learned within a single network:
+                </p>     
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="img/lego_radii_manip_slider_200p.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Citation
+                </h3>
+                <div class="form-group col-md-10 col-md-offset-1">
+                    <textarea id="bibtex" class="form-control" readonly>
+@article{xu2023neuparam,
+    title={Parameterization-driven Neural Surface Reconstruction 
+        for Object-oriented Editing in Neural Rendering},
+    author={Xu, Baixin and Hu, Jiangbei and Hou, Fei and Lin, 
+        Kwan-Yee and Wu, Wayne and Qian, Chen and He, Ying},
+    journal={ECCV},
+    year={2024}
+}</textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                We thank.
+                    <br>
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
