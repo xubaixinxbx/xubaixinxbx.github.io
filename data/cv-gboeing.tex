@@ -1,0 +1,200 @@
+%!TeX program = pdflatex
+% Geoff Boeing's Curriculum Vitae
+% Email: boeing@usc.edu
+% Web: https://geoffboeing.com/
+% Repo: https://github.com/gboeing/cv
+
+\documentclass[11pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc} % output T1 font encoding (8-bit) for accented characters as single glyph
+\usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
+\usepackage[USenglish]{babel} % regionalize hyphens, quote marks, etc automatically
+\usepackage{microtype}% improve text appearance with kerning, etc
+\usepackage{datetime} % enable formatting of date output
+\usepackage{tabto}    % make nice tabbing
+\usepackage{hyperref} % enable hyperlinks and pdf metadata
+\usepackage{geometry} % manually set page margins
+\usepackage{enumitem} % enumerate with [resume] option
+\usepackage{titlesec} % allow custom section fonts
+\usepackage{setspace} % custom line spacing
+\usepackage{xcolor}
+\usepackage{amsmath}
+
+% what is your name?
+\newcommand{\myname}{Baixin Xu}
+
+% select default typefaces
+\usepackage{ebgaramond} % document's serif typeface
+\usepackage{tgheros}    % document's sans serif typeface
+
+% how far to tab for list items with left-aligned date: different fonts need different widths
+\newcommand{\listtabwidth}{1.7cm}
+
+% define font to use as document's title
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+% set section heading fonts and before/after spacing
+\SetTracking{encoding=*, family=\sfdefault}{30} % increase sans serif headings tracking
+\titleformat{\section}{\lsstyle\sffamily\small\bfseries\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{30pt plus 4pt minus 4pt}{8pt plus 2pt minus 2pt}
+
+% set subsection heading fonts and before/after spacing
+\titleformat{\subsection}{\lsstyle\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{16pt plus 4pt minus 4pt}{4pt plus 2pt minus 2pt}
+
+% set page margins (assumes letter paper)
+\geometry{body={6.5in, 9.0in},
+    left=1.0in,
+    top=1.0in}
+
+% prevent paragraph indentation
+\setlength\parindent{0em}
+
+% set line spacing
+\setstretch{0.9}
+
+% define space between list items
+\newcommand{\listitemspace}{0.25em}
+
+% make unordered lists without bullets and use compact spacing
+\renewenvironment{itemize}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+                \setlength{\parskip}{0em}
+                \setlength{\itemsep}{\listitemspace}
+                \setlength{\parsep}{\listitemspace}}}
+{\end{list}}
+
+% make tabbed lists so content is left-aligned next to years
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+    labelindent=0em,
+    topsep=0em,
+    partopsep=0em,
+    itemsep=\listitemspace,
+    parsep=\listitemspace,
+    font=\normalfont}
+
+% print only the month and year when using \today
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+% define hyperlink appearance and metadata for pdf properties
+\hypersetup{
+    colorlinks  = true,
+    urlcolor    = black,
+    citecolor   = black,
+    linkcolor   = black,
+    pdfauthor   = {\myname},
+    pdfkeywords = {computer vision, computer graphics, 3D reconstruction, neural rendering, 3D generation, world models},
+    pdftitle    = {\myname: Curriculum Vitae},
+    pdfsubject  = {Curriculum Vitae},
+    pdfpagemode = UseNone
+}
+
+\begin{document}
+    \raggedright{}
+
+    % display your name as the document title
+    \namefont{\myname}
+
+    % affiliation and contact info blocks
+    \vspace{1em}
+    \begin{minipage}[t]{0.700\textwidth}
+        % current primary affiliation, left-aligned
+        School of Computer Science and Engineering\\
+        Nanyang Technological University \\
+        50 Nanyang Avenue, Singapore 639798
+        
+    \end{minipage}
+    \begin{minipage}[t]{0.295\textwidth}
+        % contact info details, right-aligned
+        \flushright{}
+        (+65) 90522828\\
+        \href{mailto:baixin001@e.ntu.edu.sg}{baixin001@e.ntu.edu.sg} \\
+        \href{https://xubaixinxbx.github.io/}{xubaixinxbx.github.io}
+    \end{minipage}
+
+
+    \section*{Education}
+
+    \begin{tablist}
+
+        \item[Ph.D.] \tab{}Nanyang Technological University, supervised by \href{https://personal.ntu.edu.sg/yhe/}{\textit{Prof. Ying He}}, 08/2023 - now
+        
+        \item[B.E.]  \tab{}Huazhong University of Science and Technology, 09/2018 - 07/2022
+
+    \end{tablist}
+
+    \section*{Research Profile}
+
+    Ph.D. student in computer vision and computer graphics, seeking research engineer/scientist roles in 3D vision, generative AI, neural rendering, and world models. My work focuses on reconstructing, editing, and generating high-quality 3D geometry and interactive visual worlds from sparse or multimodal inputs.
+
+
+    \section*{Publications}
+
+    \begin{tablist}
+        \item[2026] \tab{}Zile Wang*, Zexiang Liu*, Jiaxing Li*, Kaichen Huang*, \textbf{Baixin Xu*}, \textit{et al.} \enquote{Matrix-Game 3.0: Real-Time and Streaming Interactive World Model with Long-Horizon Memory.} \textit{arXiv/Tech Report}
+    
+        \item[2026] \tab{}Jiangbei Hu, Haobo Wang, \textbf{Baixin Xu}, Nan Ding, Zhimao Lu, Na Lei, Ying He. \enquote{AquaSplatting: A Hybrid 3D Representation for Robust Underwater Scene Reconstruction via Dual-Branch Rendering.} \textbf{AAAI}
+
+        \item[2026] \tab{}Hongyang Wei, Hongbo Liu, Zidong Wang, Yi Peng, \textbf{Baixin Xu}, \textit{et al.} \enquote{Skywork UniPic 3.0: Unified Multi-Image Composition via Sequence Modeling.} \textit{arXiv}
+
+        \item[2025] \tab{}Hongyang Wei*, \textbf{Baixin Xu*}, Hongbo Liu*, Size Wu, \textit{et al.} \enquote{Skywork UniPic 2.0: Building Kontext Model with Online RL for Unified Multimodal Model.} \textit{arXiv/Tech Report}
+
+        \item[2025] \tab{}Xianglong He*, Chunli Peng*, Zexiang Liu*, Boyang Wang*, \textit{et al.}, \textbf{Baixin Xu}, \textit{et al.} \enquote{Matrix-Game 2.0: An Open-Source Real-Time and Streaming Interactive World Model.} \textit{arXiv/Tech Report}
+        
+        \item[2025] \tab{}Zhongqi Yang, Wenhang Ge, Yuqi Li, Jiaqi Chen, Haoyuan Li, Mengyin An, Fei Kang, Hua Xue, \textbf{Baixin Xu}, \textit{et al.} \enquote{Matrix-3D: Omnidirectional Explorable 3D World Generation.} \textit{arXiv/Tech Report}
+
+        \item[2025] \tab{}Jiangbei Hu, Ben Fei, \textbf{Baixin Xu}, Fei Hou, Shengfa Wang, Na Lei, Weidong Yang, Chen Qian, Ying He. \enquote{TopoGen: Topology-Aware 3D Generation with Persistence Points.} \textbf{Pacific Graphics (Computer Graphics Forum)}
+        
+        \item[2025] \tab{}Qingyuan Zhou, Yuehu Gong, Weidong Yang, Jiaze Li, Yeqi Luo, \textbf{Baixin Xu}, Shuhao Li, Ben Fei, Ying He. \enquote{MGSR: 2D/3D Mutual-boosted Gaussian Splatting for High-fidelity Surface Reconstruction under Various Light Conditions.} \textbf{ICCV}
+
+        \item[2025] \tab{}Daisheng Jin, Jiangbei Hu, \textbf{Baixin Xu}, Yuxin Dai, Chen Qian, Ying He. \enquote{SFDM: Robust Decomposition of Geometry and Reflectance for Realistic Face Rendering from Sparse-view Images.} \textbf{CVPR}
+
+        \item[2025] \tab{} Jiayi Kong, Xurui Song, Huai Shuo, \textbf{Baixin Xu}, Jun Luo, Ying He. \enquote{Do Not DeepFake Me: Privacy-Preserving Neural 3D Head Reconstruction Without Sensitive Images.} \textbf{AAAI}
+
+        \item[2024] \tab{}\textbf{Baixin Xu}, Jiangbei Hu, Jiaze Li, Ying He. \enquote{GSurf: 3D Reconstruction via Signed Distance Fields with Direct Gaussian Supervision.} \textit{arXiv}
+
+        \item[2024] \tab{}\textbf{Baixin Xu}, Jiangbei Hu, Fei Hou, Kwan-Yee Lin, Wayne Wu, Chen Qian, Ying He. \enquote{Parameterization-driven Neural Surface Reconstruction for Object-oriented Editing in Neural Rendering.} \textbf{ECCV}
+
+        \item[2024] \tab{}Jiangbei Hu, Ying He, \textbf{Baixin Xu}, Shengfa Wang, Na Lei, Zhongxuan Luo. \enquote{IF-TONIR: Iteration-Free Topology Optimization Based on Implicit Neural Representations.} \textit{Computer-Aided Design}
+
+        \item[2023] \tab{}\textbf{Baixin Xu}, Jiarui Zhang, Kwan-Yee Lin, Chen Qian, Ying He. \enquote{Deformable Model Driven Neural Rendering for High-Fidelity 3D Reconstruction of Human Heads Under Low-View Settings.} \textbf{ICCV}
+
+    \end{tablist}
+    \vspace{-0.25in}
+    
+    % \section*{Projects}
+    % \begin{itemize}
+    %     \item High-resolution 3DGen
+    % \end{itemize}
+
+    \section*{Experience}
+
+    \begin{itemize}
+        \item Skywork AI / Kunlun 2050, Singapore, Research Engineer, 10/2024 - 03/2026. Worked on interactive world models, unified multimodal generation, and large-scale generation systems; contributed to Matrix-Game and Skywork UniPic projects.
+        \item S-Lab, NTU, Singapore, Research Assistant, 11/2022 - 10/2024. Advised by \href{https://personal.ntu.edu.sg/yhe/}{\textit{Prof. Ying He}}; worked on neural surface reconstruction, Gaussian/SDF representations, and editable neural rendering.
+        \item Shanghai AI Laboratory, China, Research Intern, 09/2022 - 06/2023. Advised by \href{https://kwanyeelin.github.io/}{\textit{Dr. Kwan-Yee Lin}}; worked on high-fidelity neural head reconstruction under sparse-view settings.
+        \item SenseTime Research, China, Research Intern, 07/2022 - 09/2022. Worked on neural rendering and 3D head reconstruction.
+    \end{itemize}
+    \vspace{-0.25in}
+    \section*{Services}
+    Reviewer: CVPR 2024/2025, ECCV 2024, ICCV 2025, NeurIPS 2025, ACM MM 2024, AAAI 2025/2026, ICLR 2025, Pacific Graphics 2023/2024, CVM-J, TVCG, TIP.
+
+    \section*{Awards and Honors}
+
+    \begin{tablist}
+
+        \item[2022] \tab{} Outstanding graduates of HUST.
+
+    \end{tablist}
+
+    \section*{Technical Skills}
+    Python, PyTorch, Linux, Git; 3D Gaussian Splatting, neural implicit representations, signed distance fields, neural rendering, 3D reconstruction, 3D generation, image/video generation.
+
+    % display today's date as Month Year after a vertical space below the end of the text
+    \begin{center}
+        \vfill
+        Updated \monthyeardate\today
+    \end{center}
+\end{document}
