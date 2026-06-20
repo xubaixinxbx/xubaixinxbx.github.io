@@ -96,6 +96,15 @@ h2 {
   font-size: 22px;
 }
 
+.publication-filter {
+  font-size: 22px;
+}
+
+.publication-filter.active {
+  color: #000;
+  cursor: default;
+}
+
 .papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;

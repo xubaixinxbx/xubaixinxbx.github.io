@@ -65,7 +65,9 @@
             <tbody>
               <tr>
                 <td style="padding:20px;width:100%;vertical-align:middle">
-                  <h2>Research</h2>
+                  <h2>Research (<a href="javascript:showPublications('selected')" id="selected-publications-link"
+                      class="publication-filter active">Selected</a> | <a href="javascript:showPublications('full')"
+                      id="full-publications-link" class="publication-filter">Full List</a>)</h2>
                   <p>
                     I am interested in building 3D-aware visual systems that can reconstruct, edit, and generate
                     high-quality geometry and immersive environments from sparse or multimodal inputs.
@@ -82,10 +84,14 @@
               <!-- ==================== 2026 ==================== -->
 
               <!-- Matrix-Game 3.0 -->
-              <tr bgcolor="#ffffd0">
+              <tr class="publication publication-selected" bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <img src='images/2026/matrix_game3.png' width=100%>
+                    <video width=100% height=100% muted autoplay loop playsinline preload="metadata"
+                      poster="images/2026/matrix_game3.png" style="object-fit: cover;">
+                      <source src="https://matrix-game-v3.github.io/static/videos/teaser.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -108,7 +114,7 @@
               </tr>
 
               <!-- AquaSplatting -->
-              <tr>
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2026/aquasplatting.png' width=100%>
@@ -127,7 +133,7 @@
               </tr>
 
               <!-- Skywork UniPic 3.0 -->
-              <tr>
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2026/unipic3.png' width=100%>
@@ -151,10 +157,14 @@
               <!-- ==================== 2025 ==================== -->
 
               <!-- Matrix-Game 2.0 -->
-              <tr bgcolor="#ffffd0">
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <img src='images/2025/matrix_game2.png' width=100%>
+                    <video width=100% height=100% muted autoplay loop playsinline preload="metadata"
+                      poster="images/2025/matrix_game2.png" style="object-fit: cover;">
+                      <source src="https://matrix-game-v2.github.io/static/videos/matrix-game2.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </td>
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -175,7 +185,7 @@
               </tr>
 
               <!-- Skywork UniPic 2.0 -->
-              <tr bgcolor="#ffffd0">
+              <tr class="publication publication-selected" bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2025/unipic2.png' width=100%>
@@ -197,7 +207,7 @@
               </tr>
 
               <!-- Matrix-3D -->
-              <tr>
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2025/matrix_3d.png' width=100%>
@@ -221,7 +231,7 @@
               </tr>
 
               <!-- TopoGen -->
-              <tr>
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2025/topogen.png' width=100%>
@@ -241,7 +251,7 @@
               </tr>
 
               <!-- MGSR -->
-              <tr>
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2025/mgsr.png' width=100%>
@@ -262,7 +272,7 @@
               </tr>
 
               <!-- Do not deepfake me -->
-              <tr>
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2025/deepfake.png' width=100%>
@@ -282,7 +292,7 @@
               </tr>
 
               <!-- SFDM -->
-              <tr>
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2025/sfdm.png' width=100%>
@@ -310,7 +320,8 @@
               <!-- ==================== 2024 ==================== -->
 
               <!-- NeuParam -->
-              <tr onmouseout="neuparam_stop()" onmouseover="neuparam_start()" bgcolor="#ffffd0">
+              <tr class="publication publication-selected" onmouseout="neuparam_stop()" onmouseover="neuparam_start()"
+                bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='neuparam_image'><video width=100% height=100% muted autoplay loop playsinline
@@ -360,7 +371,7 @@
               </tr>
 
               <!-- GSurf -->
-              <tr bgcolor="#ffffd0">
+              <tr class="publication publication-selected" bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2024/gsurf_overview_thumb.png' width=100%>
@@ -380,7 +391,7 @@
               </tr>
 
               <!-- IF-TONIR -->
-              <tr>
+              <tr class="publication">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <img src='images/2024/iftonir.png' width=100%>
@@ -405,7 +416,8 @@
               <!-- ==================== 2023 ==================== -->
 
               <!-- D2Head -->
-              <tr onmouseout="d2head_stop()" onmouseover="d2head_start()" bgcolor="#ffffd0">
+              <tr class="publication publication-selected" onmouseout="d2head_stop()" onmouseover="d2head_start()"
+                bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
                     <div class="two" id='d2head_image'><img src="images/2023/d2head.png" width=100%></div>
@@ -451,6 +463,25 @@
 
             </tbody>
           </table>
+
+          <script type="text/javascript">
+            function showPublications(mode) {
+              var rows = document.querySelectorAll('.publication');
+              var selectedLink = document.getElementById('selected-publications-link');
+              var fullLink = document.getElementById('full-publications-link');
+
+              rows.forEach(function (row) {
+                var shouldShow = mode === 'full' || row.classList.contains('publication-selected');
+                row.style.display = shouldShow ? '' : 'none';
+                row.style.backgroundColor = mode === 'selected' ? 'transparent' : '';
+              });
+
+              selectedLink.classList.toggle('active', mode === 'selected');
+              fullLink.classList.toggle('active', mode === 'full');
+            }
+
+            showPublications('selected');
+          </script>
 
 
           <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
